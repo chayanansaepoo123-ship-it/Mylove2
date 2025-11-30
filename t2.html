@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My love 2</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body{
+            background-image: url("Pink and White Playful Cute Self Love Motivation Quotes Desktop Wallpaper.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+<center>
+    <form onsubmit="return false;">
+        <h1>
+            User name: <br>
+            <input type="text" id="username"><br>
+
+            User password:<br>
+            <input type="password" id="password"><br><br>
+
+            <button type="button" onclick="checkPassword()">Click Me!</button>
+        </h1>
+    </form>
+</center>
+
+<script>
+    function checkPassword() {
+        const user = document.getElementById("username").value;
+        const pass = document.getElementById("password").value;
+
+        // ตั้งรหัสที่ต้องการตรวจสอบตรงนี้
+        const correctUser = "Not";
+        const correctPass = "091968";
+
+        if (user === correctUser && pass === correctPass) {
+            alert("เข้าสู่ระบบสำเร็จ!");
+            window.location.href = "t3.html"; // ไปหน้า t3.html
+        } else {
+            alert("Usre: Not pass:ไม่บอกเดาเอา");
+        }
+    }
+</script>
+
+</body>
+</html>
